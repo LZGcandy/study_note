@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background:rgb(255, 196, 0);
+            float:left;
+        }
+        div div{
+            border: 2px solid yellow;
+            color: rgb(233, 116, 116);
+            font-size: 50px;
+            text-align:center;
+        }
+        .box1>div:nth-child(1):hover,.box4>div:nth-child(2):hover{
+            background: coral;
+        }
+        .box2>div:nth-child(2):hover,.box3>div:nth-child(1):hover{
+            background: cyan;
+        }
+        .box3>div:nth-child(3):hover,.box4>div:nth-child(1):hover{
+            background:hotpink;
+        }
+        .box1>div:nth-child(2):hover,.box2>div:nth-child(3):hover{
+            background: blueviolet;
+        }
+        .box1>div:nth-child(3):hover,.box2>div:nth-child(1):hover{
+            background: rgb(190, 25, 231);
+        }
+        .box3>div:nth-child(2):hover,box4>div:nth-child(3):hover{
+            background: rgb(255, 252, 96);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="box2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="box3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="box4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+
+</html>

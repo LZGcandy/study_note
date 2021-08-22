@@ -1,0 +1,12 @@
+#head{
+    height: 100px;
+    background-color: firebrick;
+}
+#main{
+    height: 1130px;
+    background-color: gold;
+}
+#footer{
+    height: 220px;
+    background-color: darkblue;
+}
