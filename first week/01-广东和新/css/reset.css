@@ -14,3 +14,83 @@ em,i{
 b,strong{
     font-weight: none;
 }
+/* 版心 */
+.wrapper{
+    width: 1161px;
+    margin:0 auto;
+}
+
+
+#head{ 
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+}
+#head .logo{
+    width: 214px;
+    height: 100%;
+    float: left;
+}
+#head .nav{
+    width: 896px;
+    height: 100px;
+    float: right;
+}
+#head .nav li{
+    width: 128px;
+    height: 100px;
+    float: left;
+}
+#head li a{
+    display: block;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: #000;
+}
+
+
+#footer{
+    width: 100%;
+    height: 220px;
+    background: #2e2e2e;
+}
+#footer  .footer-img{
+    height: 87px;
+    text-align: center;
+    padding-top: 23px;
+}
+#footer div img{
+    width: 152px;
+    margin: 0 auto;
+    display: block;
+}
+#footer ul{
+    width: 763px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 34px;
+}
+#footer ul li{
+    width: 108px;
+    height: 13px;
+    border-right: 1px solid #4b4b4b;
+    float: left;
+    line-height: 12px;
+    text-align: center;
+}
+#footer ul li a{
+    font-size: 11px;
+    color: #999999;
+}
+#footer p{
+    width: 440px;
+    height: 15px;
+    font-size: 15px;
+    color: #7f7f7f;
+    text-align: center;
+    margin: 0 auto;
+}
+#footer .p1{
+    margin-top: 13px;
+}
