@@ -1,0 +1,28 @@
+/* 头部 */
+#head{ 
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+}
+#head .logo{
+    width: 214px;
+    height: 100%;
+    float: left;
+}
+#head .nav{
+    width: 896px;
+    height: 100px;
+    float: right;
+}
+#head .nav li{
+    width: 128px;
+    height: 100px;
+    float: left;
+}
+#head li a{
+    display: block;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: #000;
+}
