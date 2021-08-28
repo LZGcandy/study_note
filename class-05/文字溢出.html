@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 200px;
+            background-color: cyan;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            /* overflow: auto; */
+            overflow: inherit;
+            /* white-space: normal; */
+            /* white-space: pre; */
+            /* white-space: pre-wrap; */
+            /* white-space: pre-line; */
+            white-space: nowrap;
+            /* text-overflow: clip; */
+            /* text-overflow: ellipsis; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        在山的那边海的那边海的那边在山的那边海的那边在山的那边海的那边海的那边在山的那边海的那边在山的那边海的那边海的那边在山的那边海的那边在山的那边海的那边s海的那边在山的那边海的那边在山的那边海的那边
+    </div>
+</body>
+</html>
+<!-- 
+    overflow:设置溢出容器的内容如何显示（css2）
+    属性值：
+    visible: 默认值，内容不会被修剪，会呈现在元素框之外；
+    hidden:  内容会被修剪，并且其余内容是不可见的；
+    scroll:  内容会被修剪，但是浏览器会显示滚动条，以便查看其余的内容;
+    auto:    如果内容被修剪，则浏览器会显示滚动条，以便查看其他的内容;
+    inherit: 规定应该从父元素继承overflow属性的值。(默认继承)
+ -->
+ <!-- 
+     white-space：设置如何处理元素中的空白
+        normal:   默认值，多余空白会被浏览器忽略只保留一个；
+        pre:      空白会被浏览器保留（类似pre标签）；
+        pre-wrap: 保留一部分空白符序列，但是正常的进行换行；
+        pre-line: 合并空白符序列，但是保留换行符；
+        nowrap:   文本不会换行，文本会在同一行上继续，直到遇到<br/>标签为止;
+  -->
+  <!-- 
+      text-overflow：设置单行文本溢出是否显示省略号
+      clip：不显示省略号，而不是简单的裁剪
+      ellipsis：当对象内文本溢出时，显示省略号
+   -->
+   <!-- 
+       单行文本溢出省略号
+       1.容器必须有宽度
+       2.white-space  文本不换行
+         overflow：hidden  溢出隐藏
+         text-overflow：ellipsis  文本超出展示省略号
+    -->
+   <!-- 
+       多行文本溢出省略号
+       overflow:hidden;
+       text-overflow:ellipsis;
+       display：-webkit-box;
+       -webkit-line-clamp:;
+       -webkit-boc-orient:vitical;
+    -->

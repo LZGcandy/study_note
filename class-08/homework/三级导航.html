@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+            width: 100px;
+            height: 50px;
+            border: 1px solid #fff;
+            text-align: center;
+            line-height: 50px;
+        }
+        .list{
+            background: lightcoral;
+            float: left;
+            position: relative;
+        }
+        .list1 li{
+            background: crimson;
+        }
+        .list1{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            display: none;
+        }
+        .list:hover .list1{
+            display: block;
+        }
+        .list2 li{
+            background: darkorange;
+        }
+        .list1-3{
+            position: relative;
+        }
+        .list2{
+            position: absolute;
+            top: 0px;
+            left: 100px;
+            display: none;
+        }
+        .list1-3:hover .list2{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="list">1
+            <ul class="list1">
+                <li>1-1</li>
+                <li>1-2</li>
+                <li class="list1-3">1-3
+                    <ul class="list2">
+                        <li>3-1</li>
+                        <li>3-2</li>
+                        <li>3-3</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="list">2</li>
+        <li class="list">3</li>
+        <li class="list">4</li>
+    </ul>
+</body>
+</html>

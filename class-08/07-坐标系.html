@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            /* height: 100px; */
+            background: paleturquoise;
+            position: absolute;
+            top: 50px;
+            bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+<!-- 
+    一个绝对定位/相对定位/固定定位 同时指定left，right，如果这个元素有宽度，那么right将会被忽略
+                                同时指定top，bottom，如果这个元素有高度，那么right将会被忽略
+
+一个绝对定位/固定定位 同时指定left, right，如果这个元素没有宽度，那么这个元素会拉伸满足left,right
+                    同时指定top,bottom，如果这个元素没有高度，那么这个元素会拉伸满足top, bottom
+
+一个绝对定位/固定定位/相对定位/如果没有给它指定top bottom right left 它会以正常的文档流位置展示
+
+ -->
