@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 800px;
+            background-color: blanchedalmond;
+        }
+        h1{
+            width: 150px;
+            background-color: burlywood;
+            float: left;
+        }
+        div::after{
+            content: "";
+            overflow: hidden;
+            visibility: hiddeb;
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>我能说啥</h1>
+        <h1>我能说啥</h1>
+        <h1>我能说啥</h1>
+        <h1>我能说啥</h1>
+        <h1>我能说啥</h1>
+    </div>
+</body>
+</html>
+<!-- 
+    overflow:hidden;
+    clear:both;
+    ::after{
+        content:"";
+        overflow:hidden;
+        visibility:hidden;
+        display:block;
+        clear:both;
+    }
+
+
+    visibility:规定元素是否可见
+                visible 默认值 可见
+                hidden  隐藏 不可见
+    opacity 透明度   0~1
+    visibility:hidden;和opacity:0;隐藏之后还占空间，只不过看不见
+    display:block是让元素消失，不占据空间
+    visibility给父元素加hidden，给子元素加visi，子元素可见
+    opacity父元素0.子元素1，子元素不可见
+ -->

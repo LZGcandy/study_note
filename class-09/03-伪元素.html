@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div::before{
+            content: "ni";
+        }
+        div::after{
+            content: "zhu";
+        } */
+        div::before{
+            content: attr(data-text);
+        }
+        div::after{
+            content: attr(data-md);
+        }
+    </style>
+</head>
+<body>
+    <div data-text="你" data-md="猪">是</div>
+    <div data-md="猪">是</div>
+</body>
+</html>
+<!-- 
+    伪元素
+    ::before 最前面
+    ::after  最后面
+    ::first-letter 第一个字
+    ::first-line  第一行
+    ::selection  被选中的
+    ::placeholder  表单控件的
+    加完是行内块元素  content
+
+    伪元素补充
+    content: attr(data-text);
+ -->

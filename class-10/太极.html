@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(206, 205, 205);
+        }
+        .box{
+            width: 0;
+            height: 200px;
+            border-left: 100px solid white;
+            border-right: 100px solid black;
+            border-radius: 50%;
+            margin: 200px auto;
+            position: relative;
+            /* transition: 2s; */
+        }
+        .white1,.black1{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .white1{
+            background: white;
+            top: 0;
+            left: -50px;
+        }
+        .black1{
+            background: black;
+            bottom: 0;
+            left: -50px;
+        }
+        .white2,.black2{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .white2{
+            background: white;
+            bottom: 40px;
+            left: -15px;
+        }
+        .black2{
+            background: black;
+            top: 40px;
+            left: -15px;
+        }
+        /* .box:hover{
+            transform: scale(2) rotate(720deg);
+        } */
+        @keyframes taiji {
+            0%{transform: scale(1) rotate(0deg);}
+            50%{transform: scale(2) rotate(720deg);}
+            100%{transform: scale(1) rotate(0deg);} 
+        }
+        .box{
+            animation: taiji 5s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="white1"></div>
+        <div class="black1"></div>
+        <div class="white2"></div>
+        <div class="black2"></div>
+    </div>
+</body>
+</html>

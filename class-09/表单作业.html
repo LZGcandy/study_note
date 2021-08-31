@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 683px;
+            height: 616px;
+            border: 1px solid #eaeaea;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 -35px 30px -15px #f2f2f2 inset;
+        }
+        h3{
+            margin: 28px 0 0 34px;
+            /* font-weight: normal; */
+            font-size: 12px;
+        }
+        p{
+            line-height: 43px;
+            margin-left: 34px;
+            font-size: 12px;
+            color: #666666;
+        }
+        a{
+            color: #045b9d;
+        }
+        .ten input{
+            width: 83px;
+        }
+        span::before{
+            content: attr(data-xing);
+            color: red;
+        }
+        span:after{
+            content: attr(data-text);
+        }
+        .nine input{
+            width: 50px;
+            height: 13px;
+        }
+        .last input{
+            width: 71px;
+            height: 30px;
+            background-color: #f5f5f7;
+        }
+        p input{
+            width: 248px;
+            height: 30px;
+            border:1px solid #dfe4e8;
+            outline: none;
+        }
+        .last{
+            text-indent: 55px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>用户注册</h3>
+        <p>如果您已经有了账户，请点击<a href="">登录</a></p>
+        <form action="">
+            <p class="one">
+                登陆账号：<input type="text"><span data-xing="*" data-text="4~15位；英文或数字；"></span>
+            </p>
+            <p class="two">
+                输入密码：<input type="password"><span data-xing="*" data-text="6~20位；英文或数字；区分大小写；"></span>
+            </p>
+            <p class="three">
+                重输密码：<input type="password"><span data-xing="*" data-text="请再输入一遍上面填写的密码"></span>
+            </p>
+            <p>
+                姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名：<input type="text"><span data-xing="*"></span>
+            </p>
+            <p>
+                所在省份：<select name="" id="">
+                    <option value="">--请选择省份--</option>
+                    <option value="">浙江省</option>
+                    <option value="">江西省</option>
+                </select><span data-xing="*"></span>
+            </p>
+            <p>
+                公司名称：<input type="text"><span data-xing="*"></span>
+            </p>
+            <p>
+                练习电话：<input type="text"><span data-xing="*"></span>
+            </p>
+            <p>
+                电子邮箱：<input type="text"><span data-xing="*"></span>
+            </p>
+            <p class="nine">
+                用户类型：<input type="radio" name="user" id=""> 客户
+                <input type="radio" name="user"> 员工
+            </p>
+            <p class="ten">
+                验&nbsp证&nbsp码：<input type="text">
+            </p>
+            <p class="last">
+                <input type="submit" value="注册">
+                <input type="reset" value="重写">
+            </p>
+        </form>
+    </div>
+</body>
+</html>

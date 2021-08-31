@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 350px;
+            background: firebrick;
+            overflow: hidden;
+            transition: 2s;
+        }
+        .box1{
+            width: 80px;
+            height: 30px;
+            background: black;
+            color: white;
+            transform: translate(50px,150px);
+        }
+        .box2{
+            width: 150px;
+            height: 20px;
+            background: black;
+            color: white;
+            transform: translate(60px,400px);
+            transition: all 1s;
+        }
+        .box:hover .box2{
+            transform: translate(60px,200px);
+        }
+        .box:hover{
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3 class="box1">平移动画</h3>
+        <div class="box2">最简单的平移动画</div>
+    </div>
+</body>
+</html>

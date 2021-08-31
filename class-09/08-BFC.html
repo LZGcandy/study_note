@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 清除margin -->
+    <style>
+        *{
+            margin: 0;
+            bottom: 0;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: powderblue;
+            margin-bottom: 50px;
+            float: left;
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-color: sandybrown;
+            margin-top: 30px;
+        }
+        .box{
+            overflow: hidden;
+        }
+        /* 清除浮动 */
+    </style>
+</head>
+<body>
+    <!-- 清除margin -->
+    <div class="box">
+        <div class="box1"></div>
+    </div>
+    <div class="box2"></div>
+    <!-- 清除浮动 -->
+</body>
+</html>
+<!-- 
+    BFC  块状格式化上下文  block formatting context
+    bfc是一个独立空间，只有块状元素参与，规定了里面的块状元素如何布局，与外界毫不相干
+
+    如何触发bfc
+    1.根元素html
+    2.float不是none
+    3.position：absolute、fixed
+    4.display：inline-block、table-cell、flex、inline-flex
+    5.overflow不是visible
+
+    bfc布局规则
+    1.内部的块状元素，从上往下排列
+    2.垂直方向的距离由margin控制，属于同一个bfc的元素，上下的margin会重叠
+    3.每个元素的margin-left会和父元素的border-left相接触
+    4.bfc的区域不会和浮动元素相重叠
+    5.bfc区域和外界空间毫不相干
+    6.计算bfc元素高度，浮动元素也参与计算
+
+    bfc应用
+    1.两栏布局
+    2.清除margin重叠
+    3.清除浮动
+ -->

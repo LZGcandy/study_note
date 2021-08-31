@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            margin: 50px auto;
+            opacity: 1;
+            transition: all 2s;
+            transition-delay: 1s;
+        }
+        div:hover{
+            width: 300px;
+            height: 300px;
+            background-color: sandybrown;
+            border-radius: 50%;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+<!-- 
+    过渡   从一个属性平滑的去到另一个属性
+    transition  复合属性
+
+    transition-property：规定哪些属性发生过渡
+    如果需要写多个属性，用逗号分开
+
+    transition-duration：过渡持续时间 ms s 1s=1000ms
+
+    transition 默认值 all
+
+    transition-delay：定义在过渡效果开始之前需要等待的时间，以秒或毫秒计，默认值为0。作用于所有元素，包括:before和:after伪元素。
+
+    transition-timing-function：过渡状态
+                                ease  先加速后减速
+                                linear 匀速
+                                ease-in
+                                ease-out
+                                ease-in-out
+
+ -->

@@ -61,6 +61,9 @@
         .p3{
             text-align: center;
         }
+        span::after{
+            content: attr(data-text);
+        }
     </style>
 </head>
 <body>
@@ -88,13 +91,13 @@
                 <legend>用户注册</legend>
                 <p class="p1"><b>您的电子邮箱不会被公布出去，但是必须填写。</b><span>在您注册之前请认真阅读服务条款</span></p>
                 <p class="p2">
-                    <span>用户名</span><input type="text" maxlength="30">
+                    <span>用户名</span><input type="text" maxlength="30"><span data-text="*(最多30个字符)"></span>
                 </p>
                 <p class="p2">
                     <span>电子邮箱</span><input type="text">
                 </p>
                 <p class="p2">
-                    <span>密码</span><input type="password" maxlength="15">
+                    <span>密码</span><input type="password" maxlength="15"><span data-text="*(最多15个字符)"></span>
                 </p>
                 <p class="p2">
                     <span>重复密码</span><input type="password">
