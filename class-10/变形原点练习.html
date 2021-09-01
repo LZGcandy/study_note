@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto ;
+            position: relative;
+        }
+        img{
+            width: 100px;
+            float: left;
+            transform-origin: center bottom;
+            position: absolute;
+            top: 0;
+            left: 100px;
+            transition: 1s;
+        }
+        div:hover .img1{
+            transform: rotate(-45deg);
+        }
+        div:hover .img2{
+            transform: rotate(-30deg);
+        }
+        div:hover .img3{
+            transform: rotate(-15deg);
+        }
+        div:hover .img4{
+            transform: rotate(0deg);
+        }
+        div:hover .img5{
+            transform: rotate(15deg);
+        }
+        div:hover .img6{
+            transform: rotate(30deg);
+        }
+        div:hover .img7{
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./images/3print.jpg" alt="" class="img1">
+        <img src="./images/11print.jpg" alt="" class="img2">
+        <img src="./images/1print.jpg" alt="" class="img3">
+        <img src="./images/6print.jpg" alt="" class="img4">
+        <img src="./images/7print.jpg" alt="" class="img5">
+        <img src="./images/12print.jpg" alt="" class="img6">
+        <img src="./images/14print.jpg" alt="" class="img7">
+    </div>
+</body>
+</html>

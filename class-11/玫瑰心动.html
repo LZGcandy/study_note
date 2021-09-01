@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxs{
+            width: 100%;
+            height: 700px;
+            background: url(./images/bg.jpg) no-repeat;
+            position: relative;
+        }
+        .box{
+            float: left;
+            position: absolute;
+            top: 200px;
+            left: 600px;
+            animation-name: hua;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .div1{
+            opacity: 0;
+        }
+        .div2{
+            animation-delay: 2s;
+            opacity: 0;
+        }
+        .div3{
+            animation-delay: 4s;
+            opacity: 0;
+        }
+        .div4{
+            animation-delay: 6s;
+            opacity: 0;
+        }
+        .div5{
+            animation-delay: 8s;
+            opacity: 0;
+        }
+        .img1{
+            position: absolute;
+            top: 20px;
+            left: 80px;
+        }
+
+        @keyframes hua{
+            from{
+                transform: scale(0.5);
+                opacity: 1;
+            }
+            to{
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxs">
+        <div class="box div1"><img src="./images/hua2.png" alt=""></div>
+        <div class="box div2"><img src="./images/hua2.png" alt=""></div>
+        <div class="box div3"><img src="./images/hua2.png" alt=""></div>
+        <div class="box div4"><img src="./images/hua2.png" alt=""></div>
+        <div class="box div5">
+            <img src="./images/hua2.png" alt="">
+            <img src="./images/pic.png" alt="" class="img1">
+        </div>
+    </div>
+</body>
+
+</html>

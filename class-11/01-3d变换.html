@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father{
+            width: 500px;
+            height: 500px;
+            background: cornsilk;
+            margin: 50px auto;
+            perspective: 1000px;
+        }
+        .son{
+            width: 100px;
+            height: 100px;
+            background: cornflowerblue;
+        }
+        .father:hover .son{
+            transform: translateZ(50px)
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>
+<!-- 
+    3d变换   旋转 平移 缩放
+    transform    XYZ
+        平移
+        translateZ()
+        translate3d(x,y,z)
+        旋转
+        rotateZ()绕着Z轴旋转
+
+        perspective-origin()
+          属性值：
+            x: left center right/length/%
+            y: top center bottom/length/%
+            说明：一般设置在父元素上，结合perspective使用；
+ -->

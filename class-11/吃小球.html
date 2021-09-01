@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 200px;
+            margin: 0 auto;
+            position: relative;
+            
+        }
+        .div1,.div2{
+            width: 100px;
+            height: 50px;
+            background: tomato;
+            position: absolute;
+            left: 0;
+            z-index: 2;
+            
+        }
+        .div1{
+            border-radius: 50px 50px 0 0;
+            transform-origin: bottom center;
+            transform: rotate(-30deg);
+            top: 0;
+            animation: qiu1 2s infinite linear;
+        }
+        .div2{
+            border-radius: 0 0 50px 50px;
+            transform-origin: top center;
+            transform: rotate(30deg);
+            top: 50px;
+            animation: qiu2 2s infinite linear;
+        }
+        @keyframes qiu1{
+            0%{
+                transform: rotate(-30deg);
+            }
+            50%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(-30deg);
+            }
+        }
+        @keyframes qiu2{
+            0%{
+                transform: rotate(30deg);
+            }
+            50%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(30deg);
+            }
+        }
+        .div3,.div4,.div5{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: turquoise;
+            position: absolute;
+            top: 40px;
+            left: 200px;
+            animation: qiu3 4s infinite linear;
+            opacity: 0;
+        }
+        .div4{
+            animation-delay: 2s;
+        }
+        .div5{
+            animation-delay: 4s;
+        }
+        @keyframes qiu3{
+            from{
+                top: 40px;
+                left: 200px;
+                opacity: 1;
+            }
+            to{
+                top: 40px;
+                left: 0;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5"></div>
+    </div>
+</body>
+</html>

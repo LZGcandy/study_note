@@ -16,8 +16,11 @@
             width: 100px;
             height: 100px;
             background-color: coral;
-            transition-delay: 5s;
+            transition-duration: 5s;
             margin: 10px;
+        }
+        .div1{
+            transition-timing-function: linear;
         }
         .div2{
             transition-timing-function: ease;
@@ -31,7 +34,7 @@
         .div5{
             transition-timing-function: ease-in-out;
         }
-        .box:hover .div,.div2,.div3,.div4,.div5{
+        .box:hover .div1,.div2,.div3,.div4,.div5{
             width: 600px;
         }
     </style>
