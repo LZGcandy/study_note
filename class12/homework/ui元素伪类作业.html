@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type='text']:disabled{
+            background: red;
+        }
+        input[type='password']:enabled{
+            background: green;
+        }
+
+        p input[type='text']:read-only{
+            border: 4px double yellow;
+        }
+        p input[type='email']:read-write{
+            border: 9px dashed pink;
+        }
+        input[name='wo']:checked{
+            width: 50px;
+            height: 50px;
+        }
+        input[name='ni']:default{
+            width: 50px;
+            height: 50px ;
+        }
+        input[name='ta']:indeterminate{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" disabled>
+    <input type="password">
+    <p>
+        <input type="text" readonly>
+        <input type="email">
+    </p>
+    <p>
+        <input type="radio" name="wo">
+        <input type="radio" name="wo">
+    </p>
+    <p>
+        <input type="checkbox" name="ni" checked>
+        <input type="checkbox" name="ni">
+    </p>
+    <p>
+        <input type="radio" name="ta">
+        <input type="radio" name="ta">
+    </p>
+</body>
+</html>

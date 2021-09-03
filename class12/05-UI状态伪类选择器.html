@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .in1:disabled{
+            background: thistle;
+        }
+        .in2:enabled{
+            background: tomato;
+        }
+        .in3:read-only{
+            background: turquoise;
+        }
+        .in4:read-write{
+            width: 50px;
+            height: 20px;
+            background: violet;
+        }
+        .in5:checked{
+            width: 50px;
+            height: 50px;
+        }
+        .in6:default{
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" disabled class="in1">
+    <input type="text" class="in2">
+    <input type="text" class="in3" readonly>
+    <input type="text" class="in4">
+    <input type="radio" class="in5" value="我">
+    <input type="checkbox" class="in6" checked>
+    <input type="text" class="in7">
+</body>
+</html>
+<!-- 
+    E:disabled:设置该元素处于不可用状态的样式;
+    E:enabled:设置该元素处于可用状态时的样式;
+
+    E:read-only:指定当元素处于只读状态时的样式;
+    E:read-write:指定当元素处于非只读状态时的样式;
+
+    E:checked:指定当表单中的radio单选框或checkbox复选框处于选取状态时的样子;
+    E:default:指定当页面打开时默认处于选中状态的radio或checkbox控件的样式;
+    E:indeterminate:指定当页面打开时,如果一组单选框中任何一个单选框都没有被设定为选取状态时整组单选框的样式，如果用户选取了一个单选框，则该样式被取消;
+ -->

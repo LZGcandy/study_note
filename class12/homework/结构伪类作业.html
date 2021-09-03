@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 500px;
+            height: 500px;
+            margin: 100px auto;
+        }
+        li{
+            list-style: none;
+            width: 300px;
+            margin: 10px 0;
+        }
+        p{
+            width: 300px;
+            margin: 10px 0;
+        }
+        a{
+            display: block;
+            width: 500px;
+            margin: 10px 0;
+        }
+        li:first-child{
+            border: 5px dashed palevioletred;
+        }
+        li:nth-child(2){
+            border: 5px dotted paleturquoise;
+        }
+        ul li:nth-of-type(3){
+            background: lightblue;
+        }
+        ul p:nth-of-type(1){
+            border: 5px double red;
+        }
+        ul a:only-of-type{
+            background: url(../img/a.png) no-repeat 350px 1px ;
+        }
+        li:nth-last-child(2){
+            background: darkorange;
+        }
+        li:last-child{
+            border: 5px solid darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>li-我是第一个孩子-first-child</li>
+        <li>li-我是第二个孩子-nth-child</li>
+        <li>li-我是第三个孩子-nth-of-type</li>
+        <p>p-我是与众不同的孩子1-nth-of-type</p>
+        <p>p-我是与众不同的孩子2</p>
+        <a href="#">a-我是这个类型标签，唯一的孩子-only-of-type</a>
+        <div></div>我是内容为空的盒子
+        <li>li-我是倒数第二个孩子-nth-last-child</li>
+        <li>li-我是最后一个孩子-last-child</li>
+    </ul>
+</body>
+</html>

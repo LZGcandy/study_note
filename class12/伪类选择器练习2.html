@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 300px;
+            margin: 100px auto;
+            background: grey;
+            padding: 10px;
+        }
+        a{
+            display: block;
+            width: 400px;
+            height: 50px;
+            background: cornflowerblue;
+            line-height: 50px;
+            text-decoration: none;
+            color: white;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+        div{
+            width: 400px;
+            height: 0px;
+            background: white;
+            overflow: hidden;
+            transition: 2s;
+        }
+        div:target{
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <a href="#div1">跳转到div1</a>
+        <div id="div1">iwfhweoinsojsmpcnslvnslcaskcnjfhjoihsnjcbdcnxjmcnofbsnjvnsfsdaxvv</div>
+        <a href="#div2">跳转到div2</a>
+        <div id="div2">iwfhweoinsojsmpcnslvnslcaskcnjfhjoihsnjcbdcnxjmcnofbsnjvnsfsdaxvv</div>
+        <a href="#div3">跳转到div3</a>
+        <div id="div3">iwfhweoinsojsmpcnslvnslcaskcnjfhjoihsnjcbdcnxjmcnofbsnjvnsfsdaxvv</div>
+    </div>
+</body>
+
+</html>

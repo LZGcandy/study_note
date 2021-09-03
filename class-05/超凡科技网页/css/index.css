@@ -62,7 +62,7 @@
     line-height: 83px;
 }
 #head ul li:hover a{
-    color: red;
+    color: rgb(91, 91, 247);
     border-bottom: 1px solid black;
 }
 /* banner部分 */

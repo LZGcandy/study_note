@@ -35,12 +35,29 @@
         平移
         translateZ()
         translate3d(x,y,z)
-        旋转
-        rotateZ()绕着Z轴旋转
 
-        perspective-origin()
+        旋转
+        rotateZ()绕着Z轴旋转=rotate()
+        rotate3d(x,y,z)
+
+        缩放
+        scaleZ() z轴上进行缩放
+        scale3d(x,y,z)
+        perpective:给元素添加近大远小的效果 景深
+                    900px~1000px
+
+        perspective-origin()  景深原点
           属性值：
             x: left center right/length/%
             y: top center bottom/length/%
             说明：一般设置在父元素上，结合perspective使用；
+
+        transform-style: 指定嵌套元素是怎样在三维空间中呈现
+                    flat 默认 元素在二维空间呈现
+                    preserve-3d 元素在三维空间呈现
+
+    transform-origin: x y z;
+                    z轴 只能写数值
+
+    backface-visibility ： 定义元素不面对屏幕的时候是否可见
  -->
