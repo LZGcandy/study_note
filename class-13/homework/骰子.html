@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .boxs{
+            width: 800px;
+            height: 300px;
+            margin: 100px auto;
+            display: flex;
+            background-color: lavender;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .boxs>div{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(173, 169, 169);
+            border-radius: 10px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        .boxs .box1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .boxs .box1 div{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        
+        .box2 div{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .box2 div:nth-of-type(2){
+            align-self: flex-end;
+        }
+        .box3 div{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .box3 div:nth-of-type(2){
+            align-self: center;
+        }
+        .box3 div:nth-of-type(3){
+            align-self: flex-end;
+        }
+        .box4{
+            flex-wrap: wrap;
+        }
+        .box4 div{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .box4 div:nth-of-type(3){
+            margin-right: 40px;
+            align-self: flex-end;
+        }
+        
+        .box4 div:nth-of-type(4){
+            align-self: flex-end;
+        }
+        .box5{
+            align-content: space-between;
+            flex-wrap: wrap;
+        }
+        .box5 div{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .box5 div:nth-of-type(3){
+            margin: 0 35px;
+        }
+        .box6{
+            align-content: space-between;
+            flex-wrap: wrap;
+        }
+        .box6 div{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .box6 div:nth-of-type(2){
+            margin-left: 40px;
+        }
+        .box6 div:nth-of-type(4){
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxs">
+        <div class="box1">
+            <div></div>
+        </div>
+        <div class="box2">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box3">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box6">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>

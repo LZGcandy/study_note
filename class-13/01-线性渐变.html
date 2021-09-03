@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 10px;
+            /* background-image: linear-gradient(45deg,pink,cyan,yellowgreen,tomato); */
+            /* 颜色突变  百分比、像素 */
+            /* background-image: linear-gradient(to bottom,black 33.3%,red 33.3%,red 66.6%,yellow 66.6%,yellow 100%); */
+            /* background-image: repeating-linear-gradient(to bottom,red 100px,yellow 150px); */
+            /* background-image: repeating-linear-gradient(to top,red 10px,yellow 50px),repeating-linear-gradient(to left,transparent 50px,red 100px); */
+            background-image: repeating-linear-gradient(to right,transparent 0%,transparent 10%);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+<!-- 
+    线性渐变
+
+    background-image：linear-gradient(direction,color-stop1,color-color-stop2...)
+
+    derection 渐变方向
+    to right/top/bottom/left  默认 to bottom   180deg
+    to top left/top right/bottom right/bottom left
+    0deg
+
+    重复线性渐变
+    background-image：repeating-linear-gradient(direction,color-stop1,color-color-stop2...)
+ -->

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-image: radial-gradient(circle at 380px 280px,red 20%,blue,yellow,pink);
+            background-image:repeating-radial-gradient(pink 20px,cyan 40px)
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+<!-- 
+    background-image:radial-grafient(shap size at position,start-color,...,last-color);
+
+    shape 径向渐变形状
+        ellipse 椭圆形
+        circle  圆形
+    position  渐变位置
+            水平方向  垂直方向
+    size  渐变的大小
+        farthest-corner (默认) : 指定径向渐变的半径长度为从圆心到离圆心最远的角
+        farthest-side ：指定径向渐变的半径长度为从圆心到离圆心最远的边
+        closest-corner ： 指定径向渐变的半径长度为从圆心到离圆心最近的角
+        closest-side ：指定径向渐变的半径长度为从圆心到离圆心最近的边
+
+    重复径向渐变
+        background-image:repeating-radial-gradient(shape size at position, start-color, ..., last-color);
+
+        注意：每个颜色后边必须设置%或者px；
+ -->
