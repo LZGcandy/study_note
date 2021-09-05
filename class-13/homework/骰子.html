@@ -11,7 +11,7 @@
             padding: 0;
         }
         .boxs{
-            width: 800px;
+            width: 1000px;
             height: 300px;
             margin: 100px auto;
             display: flex;
@@ -29,33 +29,22 @@
             justify-content: space-between;
             padding: 5px;
         }
+        .boxs>div>div{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+        }
         .boxs .box1{
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .boxs .box1 div{
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: black;
-        }
         
-        .box2 div{
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: black;
-        }
         .box2 div:nth-of-type(2){
             align-self: flex-end;
         }
-        .box3 div{
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: black;
-        }
+        
         .box3 div:nth-of-type(2){
             align-self: center;
         }
@@ -65,12 +54,7 @@
         .box4{
             flex-wrap: wrap;
         }
-        .box4 div{
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: black;
-        }
+        
         .box4 div:nth-of-type(3){
             margin-right: 40px;
             align-self: flex-end;
@@ -83,30 +67,56 @@
             align-content: space-between;
             flex-wrap: wrap;
         }
-        .box5 div{
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: black;
-        }
+        
         .box5 div:nth-of-type(3){
             margin: 0 35px;
         }
+        
         .box6{
             align-content: space-between;
             flex-wrap: wrap;
-        }
-        .box6 div{
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: black;
         }
         .box6 div:nth-of-type(2){
             margin-left: 40px;
         }
         .box6 div:nth-of-type(4){
             margin-left: 40px;
+        }
+        
+        .box7{
+            display: flex;
+            flex-direction: column;
+        }
+        .box7 p{
+            height: 20px;
+            background-color: red ;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box7 p span{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .box7 p:nth-of-type(2){
+            justify-content: center;
+        }
+        .box8{
+            display: flex;
+            flex-direction: column;
+        }
+        .box8 p{
+            height: 20px;
+            display: flex;
+            background-color: red;
+            justify-content: space-between;
+        }
+        .box8 p span{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
         }
     </style>
 </head>
@@ -144,6 +154,33 @@
             <div></div>
             <div></div>
             <div></div>
+        </div>
+        <div class="box7">
+            <p>
+                <span></span>
+                <span></span>
+            </p>
+            <p>
+                <span></span>
+            </p>
+            <p>
+                <span></span>
+                <span></span>
+            </p>
+        </div>
+        <div class="box8">
+            <p>
+                <span></span>
+                <span></span>
+            </p>
+            <p>
+                <span></span>
+                <span></span>
+            </p>
+            <p>
+                <span></span>
+                <span></span>
+            </p>
         </div>
     </div>
 </body>

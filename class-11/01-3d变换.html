@@ -11,15 +11,17 @@
             height: 500px;
             background: cornsilk;
             margin: 50px auto;
+            transform-style: preserve-3d;
             perspective: 1000px;
         }
         .son{
             width: 100px;
             height: 100px;
             background: cornflowerblue;
+            transition: 1s;
         }
         .father:hover .son{
-            transform: translateZ(50px)
+            transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg) scale3d(0.5 1 1.5);
         }
     </style>
 </head>
@@ -38,11 +40,12 @@
 
         旋转
         rotateZ()绕着Z轴旋转=rotate()
-        rotate3d(x,y,z)
+        rotate3d(x,y,z,a)
 
         缩放
         scaleZ() z轴上进行缩放
         scale3d(x,y,z)
+
         perpective:给元素添加近大远小的效果 景深
                     900px~1000px
 
