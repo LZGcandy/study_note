@@ -80,11 +80,8 @@
     font-weight: lighter;
     text-align: center;
     font-size: 44px;
-    background-image: -webkit-linear-gradient(bottom,rgb(247, 84, 44),purple,rgb(81, 81, 255),green,yellow);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
 }
+
 #main .section1 p{
     font-size: 17px;
     text-align: center;

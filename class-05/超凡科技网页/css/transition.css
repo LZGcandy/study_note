@@ -119,3 +119,8 @@
 #main .section7 .wrapper .box div a:hover{
     color: cornflowerblue;
 }
+#main h1 span{
+    background-image: -webkit-linear-gradient(left,rgb(253, 208, 255),#4744fa,rgb(8,219,247));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

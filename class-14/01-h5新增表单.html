@@ -10,7 +10,7 @@
     <form action="">
         <p>
             <label for="">邮箱</label>
-            <input type="email">
+            <input type="email" autocomplete="on" name="wo">
         </p>
         <p>
             <label for="">url</label>
@@ -21,11 +21,35 @@
         </p>
         <p>
             <label for="">数字</label>
-            <input type="number">
+            <input type="number" min="10" max="30" step="2">
         </p>
         <p>
             <label for="">搜索</label>
-            <input type="search">
+            <input type="search" autofocus>
+        </p>
+        <p>
+            <label for="">颜色</label>
+            <input type="color">
+        </p>
+        <p>
+            <label for="">电话</label>
+            <input type="tel" required>
+        </p>
+        <p>
+            <label for="">time</label>
+            <input type="time">
+        </p>
+        <p>
+            <label for="">week</label>
+            <input type="week">
+        </p>
+        <p>
+            <label for="">month</label>
+            <input type="month">
+        </p>
+        <p>
+            <label for="">选取年月日</label>
+            <input type="datetime-local">
         </p>
         <input type="submit">
     </form>
@@ -51,5 +75,10 @@
     placeholder  表单控件提示信息
     required  必填，如果内容为空则不允许提交
     autofocus  焦点 会自动出现光标
+    autocomplete  on 默认
+                  off 关闭自动提示
+    novalidate 不校验
+    form  规定输入域所属的一个或多个表单，属性值必须引用所属表单的id，此属性适用于所有<input>标签的类型
+    multiple 规定输入域中可选择多个值
 
  -->
