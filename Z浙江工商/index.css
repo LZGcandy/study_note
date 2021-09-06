@@ -1,0 +1,225 @@
+/* header */
+header{
+    width: 100%;
+    height: 130px;
+}
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* header-top */
+.header-top{
+    height: 30px;
+    background-color: #0d6a9e;
+}
+.header-top .wrapper ul{
+    width: 228px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-top .wrapper div{
+    display: flex;
+}
+.header-top .wrapper div ul{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-top .wrapper ul a{
+    font-size: 12px;
+    color: white;
+    line-height: 30px;
+}
+.header-top .wrapper div input{
+    width: 152px;
+    height: 22px;
+    margin: 5px 0 0 21px;
+    border-radius: 5px;
+    border: none;
+}
+.header-top .wrapper div img{
+    height: 18px;
+    margin: 7px 0 0 7px;
+}
+/* header-bottom */
+.header-bottom{
+    height: 100px;
+    background-color: #3089c1;
+}
+.header-bottom .wrapper div:nth-child(2) img{
+    height: 100px;
+}
+/* nav */
+nav{
+    height: 50px;
+    background-color: #ffffff;
+    box-shadow: 1px 5px 10px 2px #b2b1b0;
+}
+nav .wrapper ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav .wrapper ul a{
+    color: black;
+    line-height: 50px;
+}
+/* main */
+/* main1 */
+.wrapper .main1 img{
+    display: block;
+}
+.wrapper .main1{
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #3089c1;
+    padding-bottom: 3px;
+}
+.wrapper .main1 h2{
+    font-size: 23px;
+    font-weight: normal;
+    color: #318ac4;
+    margin-top: 40px;
+}
+.wrapper .main1 div{
+    width: 145px;
+    height: 35px;
+    background-color: #3089c1;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.wrapper .main1 div img{
+    margin: 5px;
+}
+.wrapper .main1 div span{
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 30px;
+    margin-right: 30px;
+}
+/* main2 */
+.main2{
+    height: 488px;
+    /* background-color: darkorange; */
+    margin-top: 14px;
+}
+.main2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main2 ul li{
+    width: 585px;
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.main2 ul li img{
+    width: 190px;
+    height: 110px;
+    display: block;
+}
+.main2 ul li div:nth-child(2){
+    padding: 18px 0 0 12px;
+}
+.main2 ul li div:nth-child(2) h3{
+    font-size: 16px;
+    font-weight: normal;
+}
+.main2 ul li div:nth-child(2) p{
+    font-size: 12px;
+    color: #999;
+    line-height: 26px;
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* main3 */
+.main3{
+    height: 496px;
+    /* background-color: darkorange; */
+    padding: 50px 0 47px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main3 div div:nth-child(1){
+    width: 584px;
+    height: 31px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #318ac4;
+    display: flex;
+    justify-content: space-between;
+}
+.main3 div div:nth-child(1) h3{
+    font-size: 23px;
+    font-weight: normal;
+    color: #318ac4;
+}
+.main3 div div:nth-child(1) span{
+    font-size: 12px;
+    color: #318ac4;
+}
+.main3 div div:nth-child(2) ul li{
+    font-size: 14px;
+    line-height: 28px;
+}
+/* main4 */
+.main4{
+    height: 225px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.main4 div:nth-child(1),div:nth-child(6){
+    width: 88px;
+    height: 155px;
+    background-color: #3089c1;
+    padding: 40px 16px 43px;
+}
+.main4 div:nth-child(1) p{
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+.main4 div:nth-child(2){
+    width: 250px;
+    height: 155px;
+}
+.main4 div:nth-child(3){
+    width: 250px;
+    height: 155px;
+}
+.main4 div:nth-child(4){
+    width: 250px;
+    height: 155px;
+}
+.main4 div:nth-child(5){
+    width: 250px;
+    height: 155px;
+}
+.main4 div:nth-child(6){
+    background-color: #f7f7f7;
+    padding: 67px 26px 43px;
+}
+.main4 div:nth-child(6) p{
+    font-size: 12px;
+    text-align: center;
+    color: black;
+}
+.main4 div:nth-child(6) img{
+    width: 34px;
+}
+/* footer */
+footer{
+    height: 180px;
+    background-color: #3089c1;
+}
+footer .wrapper{
+    height: 180px;
+    background: url(./img/footbg.jpg) no-repeat;
+}
