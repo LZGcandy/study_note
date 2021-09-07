@@ -1,0 +1,224 @@
+/* header */
+header{
+    height: 1.22rem;
+    background: #fe3041;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.32rem;
+    /* position: fixed; */
+}
+header .icon{
+    font-size: 0.46rem;
+}
+header h1{
+    color: white;
+}
+/* nav */
+nav{
+    height: 0.55rem;
+    background: #fe3041;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.32rem;
+    /* position: fixed; */
+}
+nav ul{
+    width: 6.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    overflow: auto;
+}
+nav ul li{
+    height: 0.55rem;
+    color: white;
+    font-size: 0.3rem;
+    white-space: nowrap;
+    margin: 0 0.15rem;
+    position: relative;
+}
+nav div{
+    width: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav>div .icon{
+    color: white;
+}
+nav ul .active::after{
+    content: '';
+    width: 0.54rem;
+    height: 0.04rem;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0.25rem;
+}
+/* banner */
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
+main{
+    flex:1;
+}
+main .banner{
+    height: 2.74rem;
+    background: #eeeeee;
+    padding: 0.24rem 0.24rem 0 0.24rem;
+}
+main div:nth-child(1) img{
+    width: 100%;
+}
+/* sectio1 */
+.section1{
+    width: 100%;
+    height: 1.48rem;
+    background: #f2f2f1;
+    padding: 0.24rem 0.24rem 0 0.24rem;
+}
+.section1>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section1 ul li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section1 ul li div{
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    background: #da1c11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .icon{
+    font-size: 0.48rem;
+    color: white;
+}
+.section1 ul li p{
+    font-size: 0.16rem;
+    color: #717171;
+}
+.section1 ul li:nth-child(2) div{
+    background-color: #3aabfb;
+}
+.section1 ul li:nth-child(3) div{
+    background-color: #d9149a;
+}
+.section1 ul li:nth-child(4) div{
+    background-color: #fa5e57;
+}
+.section1 ul li:nth-child(5) div{
+    background-color: #28e881;
+}
+/* section2 */
+.section2{
+    height: 2.8rem;
+    background-color: #eeeeee;
+    padding: 0.12rem 0.24rem 0.03rem;
+}
+.section2 .pink{
+    height: 2.65rem;
+    background-color: #ffe7e9;
+    padding: 0.2rem 0.18rem 0.18rem;
+}
+.section2 .pink>div:nth-child(1){
+    display: flex;
+    justify-content: space-between
+}
+.section2 .pink>div:nth-child(1) h3{
+    font-size: 0.34rem;
+    font-weight: normal;
+}
+.section2 .pink>div:nth-child(1) p{
+    width: 1.6rem;
+    height: 0.4rem;
+    background-color: white;
+    font-size: 0.23rem;
+    color: #676666;
+    border-radius: 0.2rem;
+    text-align: center;
+    line-height: 0.4rem;
+}
+.section2 .pink>div:nth-child(2){
+    margin-top: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+.section2 .pink>div:nth-child(2)>div:nth-child(1){
+    width: 2.69rem;
+    height: 1.65rem;
+    background-color: white;
+    padding: 0.16rem;
+}
+.section2 .pink>div:nth-child(2)>div:nth-child(2){
+    width: 3.95rem;
+    height: 1.65rem;
+    background-color: white;
+    padding: 0.16rem;
+}
+
+.section2 .pink>div:nth-child(2) div:nth-child(1) h3{
+    font-weight: normal;
+    font-size: 0.27rem;
+    color: #666666;
+}
+.section2 .pink>div:nth-child(2) div:nth-child(1) p{
+    font-size: 0.2rem;
+    color: #999999;
+    line-height: 0.44rem;
+}
+.section2 .pink>div:nth-child(2) div:nth-child(1) h2{
+    font-size: 0.43rem;
+    color: red;
+}
+.section2 .pink>div:nth-child(2) div:nth-child(1) h2 span{
+    font-size: 0.21rem;
+}
+.section2 .pink>div:nth-child(2)>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+}
+.section2 .pink>div:nth-child(2)>div:nth-child(2)>div:nth-child(2) img{
+    height: 100%;
+}
+/* section3 */
+.section3{
+    height: 8rem;
+    background-color: #f2f2f2;
+}
+/* footer */
+footer{
+    width: 100%;
+    height: 0.98rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #c7c4c4;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .icon{
+    font-size: 00.44rem;
+    color: #999999;
+}
+footer div p{
+    font-size: 0.18rem;
+    color: #666666
+    ;
+}
