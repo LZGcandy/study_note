@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father{
+            width: 80%;
+            height: 700px;
+            background-color: #ccc;
+            display: grid;
+        }
+        .father div{
+            font-size: 30px;
+        }
+        .father div:nth-child(1){
+            background-color: rosybrown;
+        }
+        .father div:nth-child(2){
+            background-color: firebrick;
+        }
+        .father div:nth-child(3){
+            background-color: cadetblue;
+        }
+        .father div:nth-child(4){
+            background-color: blueviolet;
+        }
+        .father div:nth-child(5){
+            background-color: forestgreen;
+        }
+        .father div:nth-child(6){
+            background-color: navy;
+        }
+        .father div:nth-child(7){
+            background-color: orangered;
+        }
+        .father div:nth-child(8){
+            background-color: yellow;
+        }
+        .father div:nth-child(9){
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>
+<!-- 
+    grid布局   
+    加给父元素
+    display：grid/inline-grid
+    grid-template-columns  网格列大小
+    grid-template-rows  网格行大小
+
+    repeat
+    auto-fill
+    minmax （参数1/最小值，参数2/最大值）
+    fr  倍数 grid-template-columns:100px 1fr 2fr
+    例如：grid-template-columns: 1fr minmax(100px, 1fr);
+    auto 由自己决定宽度 例如：grid-template-columns:30px auto 20px;
+
+    columns-gab：列与列的间隙
+    row-gab：行与行的间隙
+    简写：gab：columns-gab row-gab
+    justify-item
+ -->
