@@ -1,12 +1,15 @@
 /* header */
 header{
+    width: 100%;
     height: 1.22rem;
     background: #fe3041;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 0.32rem;
-    /* position: fixed; */
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 header .icon{
     font-size: 0.46rem;
@@ -21,7 +24,9 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 0 0.32rem;
-    /* position: fixed; */
+    position: fixed;
+    left: 0;
+    top: 1.22rem;
 }
 nav ul{
     width: 6.7rem;
@@ -60,9 +65,10 @@ nav ul .active::after{
 body{
     display: flex;
     flex-direction: column;
-    
+    position: relative;
 }
 main{
+    margin-top: 1.77rem;
     flex:1;
 }
 main .banner{
@@ -81,23 +87,26 @@ main div:nth-child(1) img{
     padding: 0.24rem 0.24rem 0 0.24rem;
 }
 .section1>ul{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .section1 ul li{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .section1 ul li div{
     width: 0.9rem;
     height: 0.9rem;
     border-radius: 50%;
-    background: #da1c11;
+    background-image: linear-gradient(to right,rgb(255, 115, 0),#da1c11);
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0.01rem 0.01rem 0.1rem 0.01rem #da1b11b0;
 }
 .section1 .icon{
     font-size: 0.48rem;
@@ -108,16 +117,20 @@ main div:nth-child(1) img{
     color: #717171;
 }
 .section1 ul li:nth-child(2) div{
-    background-color: #3aabfb;
+    background-image: linear-gradient(to right,#3abefb,#3aabfb);
+    box-shadow: 0.01rem 0.01rem 0.1rem 0.01rem #1190dab0;
 }
 .section1 ul li:nth-child(3) div{
-    background-color: #d9149a;
+    background-image: linear-gradient(to right,#eb2fdb,#d9149a);
+    box-shadow: 0.01rem 0.01rem 0.1rem 0.01rem #d859d8a6;
 }
 .section1 ul li:nth-child(4) div{
-    background-color: #fa5e57;
+    background-image: linear-gradient(to right,#fa8557,#fa5e57);
+    box-shadow: 0.01rem 0.01rem 0.1rem 0.01rem #da4011ab;
 }
 .section1 ul li:nth-child(5) div{
-    background-color: #28e881;
+    background-image: linear-gradient(to right,#28e8a8,#28e881);
+    box-shadow: 0.01rem 0.01rem 0.1rem 0.01rem #11da8686;
 }
 /* section2 */
 .section2{
@@ -192,8 +205,73 @@ main div:nth-child(1) img{
 }
 /* section3 */
 .section3{
+    width: 100%;
     height: 8rem;
     background-color: #f2f2f2;
+    padding: 0.24rem;
+}
+.section3 .white{
+    height: 100%;
+    background-color: white;
+    border-radius: 0.1rem;
+    padding-top: 0.24rem;
+}
+.section3 .white div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section3 .white div:nth-child(1) h3{
+    font-size: 0.3rem;
+    font-weight: normal;
+    margin-left: 0.6rem;
+}
+.section3 .white>div:nth-child(1) p{
+    font-size: 0.23rem;
+    color: #999;
+    margin-right: 0.27rem;
+}
+.section3 .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 0.44rem;
+}
+.section3 .content div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section3 .content div h1{
+    width: 1.48rem;
+}
+.section3 .content div h1 img{
+    width: 100%;
+}
+.section3 .content div p{
+    font-size: 0.18rem;
+}
+.section3 .content div span{
+    width: 1.48rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    background-color: red;
+    border-radius: 0.1rem;
+    font-size: 0.16rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.section3 .content div .icon{
+    font-size: 0.2rem;
+}
+.section3 .pos{
+    position: fixed;
+    left: 0.1rem;
+    top: 9.11rem;
+}
+.section3 .pos img{
+    width: 1.17rem;
 }
 /* footer */
 footer{
@@ -202,7 +280,7 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
-    /* background-color: red; */
+    background-color: #f8f6f7;
     display: flex;
     justify-content: space-around;
     border-top: 1px solid #c7c4c4;

@@ -35,6 +35,12 @@
 </body>
 </html>
 <!-- 
+    清除浮动
+    方法1
+    给高度塌陷的元素加 overflow: hidden （触发BFC）
+    方法2
+    给高度塌陷的元素里面的最下面加一个空div，div属性clear:both
+    方法3 万能清除法
     overflow:hidden;
     clear:both;
     ::after{

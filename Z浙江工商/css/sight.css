@@ -1,0 +1,110 @@
+main{
+    height: 1809px;
+}
+main .wrapper .left{
+    width: 300px;
+    height: 1809px;
+    /* background-color: salmon; */
+    margin-right: 150px;
+    float: left;
+    padding-top: 71px;
+}
+main .wrapper .right{
+    width: 750px;
+    height: 1809px;
+    /* background-color: sandybrown; */
+    overflow: hidden;
+    padding-top: 90px;
+}
+main .left h1{
+    width: 300px;
+    height: 67px;
+    font-size: 23px;
+    line-height: 67px;
+    color: #046097;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+main .left li{
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.left li:hover{
+    color: #3d8dc0;
+    border-bottom: 1px solid #3089c1;
+    background-color: #f8f8f8;
+}
+main .left img{
+    width: 300px;
+    height: 300px;
+    box-shadow: 5px 5px 10px 3px #b0b0b0;
+    margin-top: 90px;
+}
+main .right p{
+    width: 750px;
+    color: #0a689d;
+    line-height: 48px;
+    border-bottom: 1px solid black;
+}
+main .right p a{
+    color: #0a689d;
+}
+main .right>div:nth-of-type(1){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+main .right figure{
+    width: 200px;
+    height: 229px;
+    border: 1px solid #dfdfdf;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+}
+main .right figure img{
+    width: 100%;
+    height: 160px;
+    display: block;
+}
+main .right figcaption{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 24px;
+}
+main .right>div:nth-of-type(2) ul{
+    display: flex;
+    margin-top: 55px;
+}
+main .right>div:nth-of-type(2) ul li{
+    width: 34px;
+    height: 38px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    line-height: 38px;
+    margin-right: 2px;
+    color: #666666;
+}
+main .right>div:nth-of-type(2) ul li:nth-child(1){
+    width: 68px;
+}
+main .right>div:nth-of-type(2) ul li:nth-last-child(2){
+    width: 68px;
+}
+main .right>div:nth-of-type(2) ul li:nth-last-child(1){
+    width: 57px;
+}
+.right div:nth-of-type(2) ul::after{
+    content: '共26条记录 15条/每页';
+    width: 165px;
+    height: 36px;
+    border: 1px solid #cccccc;
+    color: #cccccc;
+    font-size: 12px;
+    text-align: center;
+    line-height: 36px;
+}
