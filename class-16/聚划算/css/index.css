@@ -36,6 +36,7 @@ nav ul{
     overflow: auto;
 }
 nav ul li{
+   
     height: 0.55rem;
     color: white;
     font-size: 0.3rem;
