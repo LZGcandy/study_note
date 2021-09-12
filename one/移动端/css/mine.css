@@ -1,0 +1,218 @@
+header{
+    width: 100%;
+    height: 5.3rem;
+    background: #00a8ff; 
+    position: fixed;
+    top: 0;
+    left: 0;   
+}
+header .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .top h1{
+    font-size: 0.5rem;
+    color: white;
+    margin: 0.86rem 0 0 0.5rem;
+    font-weight: normal;
+}
+header .top div{
+    margin: 0.8rem 0.42rem 0 0;
+}
+.top .icon{
+    font-size: 0.6rem;
+}
+.bottom{
+    position: relative;
+}
+.bottom .tou{
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    background: #fad1df;
+    position: absolute;
+    top: 0.9rem;
+    left: 0.54rem;
+}
+.bottom .tou .icon{
+    font-size: 1.1rem;
+    color: white;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+.bottom h3{
+    font-size: 0.4rem;
+    color: white;
+    position: absolute;
+    top: 1.44rem;
+    left: 3.18rem;
+    font-weight: normal;
+}
+.bottom div:nth-of-type(2){
+    display: flex;
+}
+.bottom div:nth-of-type(2) .icon{
+    font-size: 0.42rem;
+}
+.bottom div:nth-of-type(2){
+    font-size: 0.27rem;
+    color: white;
+    position: absolute;
+    top: 2.26rem;
+    left: 3.18rem;
+}
+.bottom>.icon{
+    font-size: 0.48rem;
+    color: white;
+    position: absolute;
+    top: 1.96rem;
+    right: 0.54rem;
+}
+/* main */
+main{
+    flex: 1;
+    margin-top: 5.3rem;
+    padding-bottom: 1.5rem;
+    background-color: #f7f5f6;
+}
+.money{
+    height: 2.40rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.money div{
+    width: 3.6rem;
+    height: 2.42rem;
+    border: 1px solid #dfdfdf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.money div h1{
+    font-size: 0.5rem;
+    color: #199aff;
+}
+.money div h1 span{
+    font-size: 0.28rem;
+}
+.money div:nth-child(2) h1{
+    color: #ff5a41;
+}
+.money div:nth-child(3) h1{
+    color: #ffa000;
+}
+.money div p{
+    font-size: 0.34rem;
+    color: #686868;
+}
+.vip{
+    width: 100%;
+    height: 2.41rem;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #dfdfdf;
+    margin: 0.24rem 0;
+    background-color: white;
+}
+.vip .icon{
+    font-size: 1.16rem;
+    margin-left: 0.58rem;
+}
+.vip div{
+    margin-left: 0.46rem;
+}
+.vip div h1{
+    font-size: 0.5rem;
+    font-weight: normal;
+}
+.vip div h1 span:nth-child(2),span:nth-child(4){
+    color: #bda126;
+}
+.vip div p{
+    font-size: 0.32rem;
+    color: #6a686d;
+}
+.collect{
+    height: 1.46rem;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: white;
+    font-size: 0.44rem;
+    display: flex;
+    align-items: center;
+}
+.collect .icon{
+    margin-left: 0.5rem;
+    margin-right: 0.52rem;
+}
+.select{
+    background-color: white;
+}
+.select .card{
+    height: 1.45rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #dfdfdf;
+}
+.card div{
+    display: flex;  
+    align-items: center;
+}
+.card div:nth-child(1){
+    font-size: 0.44rem;
+}
+.card div:nth-child(1) h3{
+    margin-left: 0.56rem;
+    font-size: 0.44rem;
+    font-weight: normal;
+}
+.card div:nth-child(1) .icon{
+    margin-left: 0.5rem;
+}
+.card div:nth-child(2){
+    margin-right: 0.64rem;
+}
+.card div:nth-child(2) span{
+    width: 1rem;
+    height: 0.54rem;
+    background: red;
+    border-radius: 0.1rem;
+    color: white;
+    font-size: 0.24rem;
+    line-height: 0.54rem;
+    text-align: center;
+}
+.card div:nth-child(2) p{
+    font-size: 0.33rem;
+    color: #979797;margin-left: 0.42rem;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #c7c4c4;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+footer .icon{
+    font-size: 0.62rem;
+}
+footer p{
+    font-size: 0.28rem;
+}
